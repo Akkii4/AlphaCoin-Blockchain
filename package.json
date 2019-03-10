@@ -1,5 +1,5 @@
 {
-  "name": "Alphacoin Blockchain",
+  "name": "alphacoinblockchain",
   "version": "1.0.0",
   "dependencies": {
     "base58": "^1.0.1",
