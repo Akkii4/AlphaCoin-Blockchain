@@ -21,6 +21,7 @@ A unique blockchian similar to that of bitcoin
 
 9.BlockExplorer UI for searching block by its index,address for its balance,transactionId for the details of a particular transaction.
 
+10.Difficulty of mining also increases or decreases if mining rate is less than or greater than 10s.
 ```
 ## Instructions
 ```
@@ -70,4 +71,11 @@ Now to Mine the Block push a post request from the server who wants to mine the 
 
 Any new node connected on the alphacoin blockchain will receive the full copy of the blockchain based on the longest and valid blocks and there transaction on the blockchain by a get request via http://localhost:3004/consensus 
 
-/transactions/broadcast
+To perform a transaction between addresses  http://localhost:3001/transactions/broadcast
+a post request:
+ {"PublicAddress": "1efbdeee2e1e6d305db6c8fe09bfbdf44850a4458",
+        "PrivateKey": "6238d77db4783fa0dd310484dd1b4338de9c121cc6563473a0387899b32f4f51",
+        "fees":1,
+        "amount":80,
+        "recipient":"135e5c6e8832c87ca32835a15b44bc913ad071748"
+ }
